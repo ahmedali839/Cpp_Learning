@@ -261,7 +261,7 @@ int main()
 {
 
     int arr[25];
-    int positive, negative, even, odd = 0;
+    int positive = 0, negative = 0, even = 0, odd = 0;
 
     cout << "Enter 25 random numbers: ";
     for (int i = 0; i < 25; i++)
@@ -271,46 +271,28 @@ int main()
 
     for (int i = 0; i < 25; i++)
     {
-        if (arr[i] % 2 != 0)
+        if (arr[i] == 0)
+            continue;
+        if (arr[i] % 2 == 0)
         {
-            odd++;
+            even++;
         }
         else
         {
-            even++;
+            odd++;
         }
         if (arr[i] > 0)
         {
             positive++;
         }
-        else if (arr[i] < 0)
+        else
         {
             negative++;
         }
-        else
-        {
-            continue;
-        }
-        //     if (arr[i]%2 == 0)
-        //     {
-        //    even++;
-
-        //     }
-        //     else if (condition)
-        //     {
-        //         /* code */
-        //     }
-        //     else if (condition)
-        //     {
-        //         /* code */
-        //     }
-        //     else
-        //     {
-        //         /* code */
-        //     }
     }
 
-    cout << "\nHere analization of your numbers: \n " << "Postive: " << positive << " times.\n"
+    cout << "\nHere analization of your numbers: \n"
+         << "Postive: " << positive << " times.\n"
          << "Negative: " << negative << " times.\n"
          << "Even: " << even << " times.\n"
          << "Odd: " << odd << " times.\n"
