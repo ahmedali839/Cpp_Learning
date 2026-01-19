@@ -215,74 +215,104 @@
 //     return 0;
 // }
 
-// // Q-9)
+// // // Q-9)
 // #include <iostream>
 // #include <string>
 // using namespace std;
 
 // int main()
 // {
-//     string students[2][4] = {
-//         {"Computer", "Math", "Physics"},
-//         {"20", "30", "40", "45"}};
+//     int score[3][4];
 
-//     // int marks[3] = {20, 30, 45};
-
-//     for (int i = 0; i < 2; i++)
+//     for (int i = 0; i < 3; i++)
 //     {
-//         if (i == 0)
+//         cout << "Enter marks for Student " << i + 1 << " in 4 subjects:" << endl;
+//         for (int j = 0; j < 4; j++)
 //         {
-//             cout << "First Student:  ";
-//         }
-//         else if (i == 1)
-//         {
-//             cout << "Second Student: ";
-//         }
-//         else
-//         {
-//             cout << "Third Student: ";
-//         }
-//         cout << endl;
-//         for (int j = 0; j < 3; j++)
-//         {
-//             cout << students[i][j] << " ";
+//             cout << "Subject " << j + 1 << " : ";
+//             cin >> score[i][j];
 //         }
 //     }
 
-//     return 0;
-// }
+//     cout << "\n----- Student Marks -----" << endl;
 
-
-// #include <iostream>
-// using namespace std;
-
-// int main() {
-//     // 2D array: 3 students (rows) and 4 subjects (columns)
-//     int scores[3][4];
-
-//     // Input marks for each student
-//     for (int i = 0; i < 3; i++) {
-//         cout << "Enter marks for Student " << i + 1 << " in 4 subjects: " << endl;
-//         for (int j = 0; j < 4; j++) {
-//             cout << "Subject " << j + 1 << ": ";
-//             cin >> scores[i][j];
-//         }
-//     }
-
-//     // Calculate and display Total and Average
-//     cout << "\n--- Student Results ---" << endl;
-//     for (int i = 0; i < 3; i++) {
+//     for (int i = 0; i < 3; i++)
+//     {
 //         int total = 0;
-//         for (int j = 0; j < 4; j++) {
-//             total += scores[i][j]; // Summing up scores
+//         for (int j = 0; j < 4; j++)
+//         {
+//             total += score[i][j];
 //         }
-        
-//         // Use double for average to get decimal points
-//         double average = total / 4.0; 
-        
-//         cout << "Student " << i + 1 << ": Total = " << total 
-//              << ", Average = " << average << endl;
+
+//         double average = total / 4.0;
+
+//         cout << i + 1 << " Student: total marks = " << total << ", and average marks = " << average << endl;
 //     }
 
 //     return 0;
 // }
+
+// // Q-10)
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+
+    int arr[25];
+    int positive, negative, even, odd = 0;
+
+    cout << "Enter 25 random numbers: ";
+    for (int i = 0; i < 25; i++)
+    {
+        cin >> arr[i];
+    }
+
+    for (int i = 0; i < 25; i++)
+    {
+        if (arr[i] % 2 != 0)
+        {
+            odd++;
+        }
+        else
+        {
+            even++;
+        }
+        if (arr[i] > 0)
+        {
+            positive++;
+        }
+        else if (arr[i] < 0)
+        {
+            negative++;
+        }
+        else
+        {
+            continue;
+        }
+        //     if (arr[i]%2 == 0)
+        //     {
+        //    even++;
+
+        //     }
+        //     else if (condition)
+        //     {
+        //         /* code */
+        //     }
+        //     else if (condition)
+        //     {
+        //         /* code */
+        //     }
+        //     else
+        //     {
+        //         /* code */
+        //     }
+    }
+
+    cout << "\nHere analization of your numbers: \n " << "Postive: " << positive << " times.\n"
+         << "Negative: " << negative << " times.\n"
+         << "Even: " << even << " times.\n"
+         << "Odd: " << odd << " times.\n"
+         << "Thanks for reviewing all these problems.";
+}
