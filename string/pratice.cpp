@@ -129,15 +129,160 @@
 // }
 
 // // // Q-5
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
 
-    // this is how to initialize 4 rows * 6 columns in 2 dimentions array
-    int arr[4][6];
+//     // this is how to initialize 4 rows * 6 columns in 2 dimentions array
+//     int arr[4][6];
 
-    return 0;
-}
+//     return 0;
+// }
+
+// // Q-6
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main()
+// {
+//     int arr[25];
+//     int num, found = 0;
+
+//     cout << "Hi, Enter 25 random numbers: ";
+//     for (int i = 0; i < 26; i++)
+//     {
+//         cin >> arr[i];
+//     }
+
+//     cin.ignore(1000, '\n'); // This clears the "Enter" key leftover from num2
+
+//     cout << "Now Enter any of Previous number: ";
+//     cin >> num;
+
+//     for (int i = 0; i < 26; i++)
+//     {
+//         if (arr[i] == num)
+//         {
+//             found++;
+//         }
+//     }
+
+//     cout << "Your " << num << " searched number found: " << found << " times.";
+// }
+
+// // // Q-7
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main()
+// {
+//     int arr1[5] = {1, 2, 3, 4, 5};
+//     int arr2[2][5] = {
+//         {1, 2, 3, 4, 5}, {6, 7, 8, 9, 10}};
+
+//     cout << "Here difference between 1D and 2D array: " << endl;
+
+//     cout << "Here 1D array: " << endl;
+//     for (int i = 0; i < 5; i++)
+//     {
+//         cout << arr1[i] << " ";
+//     }
+//     cout << endl;
+//     cout << "Here 2D array: " << endl;
+//     for (int i = 0; i < 2; i++)
+//     {
+//         for (int j = 0; j < 5; j++)
+//         {
+//             cout << arr2[i][j] << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
+// // Q-8)
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main()
+// {
+//     int arr[5] = {1, 2, 3, 4, 5}; // It is How to initialize an array of size 5 in c++.
+//     return 0;
+// }
+
+// // Q-9)
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main()
+// {
+//     string students[2][4] = {
+//         {"Computer", "Math", "Physics"},
+//         {"20", "30", "40", "45"}};
+
+//     // int marks[3] = {20, 30, 45};
+
+//     for (int i = 0; i < 2; i++)
+//     {
+//         if (i == 0)
+//         {
+//             cout << "First Student:  ";
+//         }
+//         else if (i == 1)
+//         {
+//             cout << "Second Student: ";
+//         }
+//         else
+//         {
+//             cout << "Third Student: ";
+//         }
+//         cout << endl;
+//         for (int j = 0; j < 3; j++)
+//         {
+//             cout << students[i][j] << " ";
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     // 2D array: 3 students (rows) and 4 subjects (columns)
+//     int scores[3][4];
+
+//     // Input marks for each student
+//     for (int i = 0; i < 3; i++) {
+//         cout << "Enter marks for Student " << i + 1 << " in 4 subjects: " << endl;
+//         for (int j = 0; j < 4; j++) {
+//             cout << "Subject " << j + 1 << ": ";
+//             cin >> scores[i][j];
+//         }
+//     }
+
+//     // Calculate and display Total and Average
+//     cout << "\n--- Student Results ---" << endl;
+//     for (int i = 0; i < 3; i++) {
+//         int total = 0;
+//         for (int j = 0; j < 4; j++) {
+//             total += scores[i][j]; // Summing up scores
+//         }
+        
+//         // Use double for average to get decimal points
+//         double average = total / 4.0; 
+        
+//         cout << "Student " << i + 1 << ": Total = " << total 
+//              << ", Average = " << average << endl;
+//     }
+
+//     return 0;
+// }
