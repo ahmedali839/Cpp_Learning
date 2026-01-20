@@ -263,7 +263,7 @@ int main()
     int arr[25];
     int positive = 0, negative = 0, even = 0, odd = 0;
 
-    cout << "Enter 25 random numbers: ";
+    cout << "Enter any 25 random numbers: ";
     for (int i = 0; i < 25; i++)
     {
         cin >> arr[i];
