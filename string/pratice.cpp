@@ -296,5 +296,5 @@ int main()
          << "Negative: " << negative << " times.\n"
          << "Even: " << even << " times.\n"
          << "Odd: " << odd << " times.\n"
-         << "Thanks for reviewing all these problems.";
+         << "Thanks for reviewing all these problems."; // al right
 }
